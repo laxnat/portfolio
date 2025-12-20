@@ -2,11 +2,6 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from "@/components/ui/hover-card"
 
 export default function Home() {
   return (
@@ -144,49 +139,63 @@ export default function Home() {
         <span className="text-lg uppercase tracking-wider font-semibold text-white py-1">
           Projects
         </span>
-        <div className="gap-3 py-4">
-          <HoverCard>
-            <HoverCardTrigger asChild>
-              <Link
-                href="https://tankobon.vercel.app"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block"
-              >
-                <div className="relative  overflow-hidden rounded-2xl border border-gray-800">
-                  <Image
-                    src="/tankobonlaunch.png"
-                    alt="Tankobon"
-                    width={600}
-                    height={400}
-                    className="h-full w-full object-cover"
-                  />
-                  <div className="absolute bottom-4 left-4 text-lg font-semibold text-white">
-                    Tankōbon
-                  </div>
-                </div>
-              </Link>
-            </HoverCardTrigger>
-            <HoverCardContent className="w-72">
-              <div className="space-y-3">
-                <p className="text-sm text-muted-foreground">
-                  A modern manga platform focused on clean design, fast performance,
-                  and an immersive reading experience.
-                </p>
+        <div className="flex flex-col items-center gap-10 py-4">
+          <div className="relative overflow-hidden rounded-2xl border border-gray-800 hover:border-gray-700 transition-colors">
+            <Link
+              href="https://tankobon.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block relative group"
+            >
+              <Image
+                src="/tankobonlaunch.png"
+                alt="Tankobon"
+                width={600}
+                height={400}
+                className="h-70 w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />
+            </Link>
 
-                <div>
-                  <div className="text-xs uppercase tracking-wide text-muted-foreground mb-1">
-                    Languages
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="rounded-md bg-muted px-2 py-1 text-xs">TypeScript</span>
-                    <span className="rounded-md bg-muted px-2 py-1 text-xs">Next.js</span>
-                    <span className="rounded-md bg-muted px-2 py-1 text-xs">Tailwind CSS</span>
-                  </div>
-                </div>
+            <div className="p-6 space-y-4">
+              <div className="flex items-center justify-between">
+                <h3 className="text-xl font-semibold text-white">Tankōbon</h3>
+                <Link
+                  href="https://github.com/laxnat/Tankobon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium text-blue-400 hover:text-blue-300 hover:underline transition-colors"
+                >
+                  View Code →
+                </Link>
               </div>
-            </HoverCardContent>
-          </HoverCard>
+
+              <p className="text-sm text-gray-300 leading-relaxed">
+                A modern manga library management application to track your manga collection, reading progress, and owned volumes.
+              </p>
+
+              <div className="flex flex-wrap gap-2">
+                <span className="rounded-md bg-blue-600/80 px-3 py-1 text-xs font-medium text-white">
+                  TypeScript
+                </span>
+                <span className="rounded-md bg-blue-600/80 px-3 py-1 text-xs font-medium text-white">
+                  Next.js
+                </span>
+                <span className="rounded-md bg-blue-600/80 px-3 py-1 text-xs font-medium text-white">
+                  Tailwind CSS
+                </span>
+                <span className="rounded-md bg-blue-600/80 px-3 py-1 text-xs font-medium text-white">
+                  Prisma
+                </span>
+                <span className="rounded-md bg-blue-600/80 px-3 py-1 text-xs font-medium text-white">
+                  PostgreSQL
+                </span>
+                <span className="rounded-md bg-blue-600/80 px-3 py-1 text-xs font-medium text-white">
+                  Neon
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
