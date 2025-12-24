@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { Github, Linkedin } from "lucide-react";
 
 export default function Home() {
   return (
@@ -49,7 +50,7 @@ export default function Home() {
           </div>
           <span className="flex items-center gap-3">
             <a
-              href="/resume.pdf"
+              href="/axlresume2025V2.pdf"
               download
               className="flex items-center gap-2 px-4 py-2 hover:bg-gray-700 text-white text-sm font-medium rounded-lg transition-colors"
             >
