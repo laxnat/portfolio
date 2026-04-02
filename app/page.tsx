@@ -188,12 +188,13 @@ export default function Home() {
               rel="noopener noreferrer"
               className="block relative group"
             >
-              <div className="h-48 w-full bg-linear-to-br from-gray-900 via-slate-800 to-gray-900 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-white tracking-widest uppercase">Aegis</div>
-                  <div className="text-xs text-gray-400 tracking-widest mt-1 uppercase">Collaborative Workspace</div>
-                </div>
-              </div>
+              <Image
+                src="/aegislaunch.png"
+                alt="Aegis"
+                width={600}
+                height={400}
+                className="h-70 w-full object-cover"
+              />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />
             </Link>
  
