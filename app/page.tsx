@@ -50,7 +50,7 @@ export default function Home() {
           </div>
           <span className="flex items-center gap-3">
             <a
-              href="/axlresume2025V3.pdf"
+              href="/axlresume2025V4.pdf"
               download
               className="flex items-center gap-2 px-4 py-2 hover:bg-gray-700 text-white text-sm font-medium rounded-lg transition-colors"
             >
@@ -179,6 +179,71 @@ export default function Home() {
           Projects
         </span>
         <div className="flex flex-col items-center gap-10 py-4">
+
+          {/* Aegis */}
+          <div className="relative overflow-hidden rounded-2xl border border-gray-800 hover:border-gray-700 transition-colors w-full">
+            <Link
+              href="https://aegis-theta-five.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block relative group"
+            >
+              <div className="h-48 w-full bg-linear-to-br from-gray-900 via-slate-800 to-gray-900 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="text-4xl font-bold text-white tracking-widest uppercase">Aegis</div>
+                  <div className="text-xs text-gray-400 tracking-widest mt-1 uppercase">Collaborative Workspace</div>
+                </div>
+              </div>
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />
+            </Link>
+ 
+            <div className="p-6 space-y-4">
+              <div className="flex items-center justify-between">
+                <h3 className="text-xl font-semibold text-white">Aegis</h3>
+                <Link
+                  href="https://github.com/laxnat/aegis"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium text-blue-400 hover:text-blue-300 hover:underline transition-colors"
+                >
+                  View Code →
+                </Link>
+              </div>
+ 
+              <p className="text-sm text-gray-300 leading-relaxed">
+                A real-time collaborative document editor (Notion-inspired) with block-based rich text editing, nested folder organization, live user presence indicators, and conflict-free concurrent editing powered by CRDTs.
+              </p>
+ 
+              <div className="flex flex-wrap gap-2">
+                <span className="rounded-md bg-gray-600/80 px-3 py-1 text-xs font-medium text-white">
+                  TypeScript
+                </span>
+                <span className="rounded-md bg-gray-600/80 px-3 py-1 text-xs font-medium text-white">
+                  Next.js
+                </span>
+                <span className="rounded-md bg-gray-600/80 px-3 py-1 text-xs font-medium text-white">
+                  Tailwind CSS
+                </span>
+                <span className="rounded-md bg-gray-600/80 px-3 py-1 text-xs font-medium text-white">
+                  Liveblocks
+                </span>
+                <span className="rounded-md bg-gray-600/80 px-3 py-1 text-xs font-medium text-white">
+                  Yjs (CRDT)
+                </span>
+                <span className="rounded-md bg-gray-600/80 px-3 py-1 text-xs font-medium text-white">
+                  Prisma
+                </span>
+                <span className="rounded-md bg-gray-600/80 px-3 py-1 text-xs font-medium text-white">
+                  PostgreSQL
+                </span>
+                <span className="rounded-md bg-gray-600/80 px-3 py-1 text-xs font-medium text-white">
+                  Supabase
+                </span>
+              </div>
+            </div>
+          </div>
+
+          { /* Tankobon */}
           <div className="relative overflow-hidden rounded-2xl border border-gray-800 hover:border-gray-700 transition-colors">
             <Link
               href="https://tankobon.vercel.app"
